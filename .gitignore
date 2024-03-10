@@ -1,3 +1,5 @@
 k3s.yaml
 *.iso
 *.ign
+.terraform
+terraform.tfstate.backup
