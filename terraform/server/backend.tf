@@ -8,9 +8,10 @@ terraform {
     }
   }
 
-  backend "local" {
-    # This is a symlink
-    path = "server.tfstate"
+  backend "s3" {
+    bucket = "ralbus-tfstate"
+    key    = "coreos-cluster"
+    region = "us-east-1"
   }
 }
 
